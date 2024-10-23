@@ -58,4 +58,8 @@ footer {
     text-align: center;
     padding: 20px;
     background: #1F1F1F; /* Rodapé escuro */
+}.logo {
+    width: 300px; /* Ajusta a largura da imagem. Você pode mudar o número para aumentar ou diminuir. */
+    height: auto; /* Mantém a proporção da imagem para que não fique esticada. */
 }
+
