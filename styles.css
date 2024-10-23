@@ -1,13 +1,13 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: #121212; /* Fundo escuro */
+    color: #FFFFFF; /* Texto branco */
     margin: 0;
     padding: 0;
 }
 header {
-    background: #1F1F1F;
+    background: #1F1F1F; /* Cabeçalho escuro */
     padding: 20px;
     text-align: center;
 }
@@ -16,7 +16,7 @@ h1 {
 }
 .tabs {
     display: flex;
-    background: #3D3D3D;
+    background: #3D3D3D; /* Fundo das abas */
     padding: 10px;
     justify-content: center;
 }
@@ -32,16 +32,17 @@ h1 {
     transition: background 0.3s;
 }
 .tab a:hover {
-    background: #4CAF50; /* Verde */
+    background: #555555; /* Cor ao passar o mouse */
 }
 .content {
-    border: 1px solid #4CAF50;
+    border: 1px solid #FFFFFF; /* Borda branca */
     padding: 20px;
     border-radius: 5px;
     margin: 10px;
+    background-color: #1F1F1F; /* Fundo das seções */
 }
 footer {
     text-align: center;
     padding: 20px;
-    background: #1F1F1F;
+    background: #1F1F1F; /* Rodapé escuro */
 }
