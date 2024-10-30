@@ -1,62 +1,106 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Fundo escuro */
-    color: #FFFFFF; /* Texto branco */
+/* Reset de margens e padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* Corpo da página */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte de quadrinhos */
+    background-color: #101010; /* Fundo escuro */
+    color: #E0E0E0; /* Texto claro */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
 header {
-    background: #1F1F1F; /* Cabeçalho escuro */
-    padding: 20px;
+    background-color: #222; /* Fundo do cabeçalho */
     text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #FFD700; /* Bordas douradas */
 }
-h1 {
-    margin: 0;
+
+header h1 {
+    font-size: 3em;
+    color: #FFD700; /* Dourado */
+    text-shadow: 3px 3px 5px #000; /* Sombra do texto */
 }
-.logo {
-    max-width: 150px;
-    margin-top: 10px;
+
+/* Imagem do Batman */
+header img {
+    width: 150px; /* Tamanho da imagem */
+    margin-bottom: 10px;
 }
-.tabs {
-    display: flex;
-    background: #3D3D3D; /* Fundo das abas */
+
+/* Navegação */
+nav {
+    background: #333; /* Fundo da navegação */
     padding: 10px;
-    justify-content: center;
 }
-.tab {
-    margin: 0 10px;
-}
-.tab a {
-    color: white;
+
+nav a {
+    color: #FFD700; /* Links dourados */
     text-decoration: none;
     padding: 10px 15px;
-    display: block;
-    border-radius: 5px;
     transition: background 0.3s;
-}
-.tab a:hover {
-    background: #555555; /* Cor ao passar o mouse */
-}
-.content {
-    border: 1px solid #FFFFFF; /* Borda branca */
-    padding: 20px;
     border-radius: 5px;
+}
+
+nav a:hover {
+    background: #555; /* Efeito hover */
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #222; /* Fundo das seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    border-left: 5px solid #FFD700; /* Borda lateral dourada */
+}
+
+section h2 {
+    color: #FFD700; /* Títulos das seções */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Letras maiúsculas */
+}
+
+/* Estilo para quadrinhos */
+.comic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.comic-item {
+    background: #333; /* Fundo dos quadrinhos */
+    border-radius: 8px;
     margin: 10px;
-    background-color: #1F1F1F; /* Fundo das seções */
+    padding: 10px;
+    width: 200px; /* Largura dos quadrinhos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
-.comic-image {
-    max-width: 100px;
-    margin-left: 10px;
+
+.comic-item img {
+    width: 100%; /* Imagem do quadrinho */
+    border-radius: 5px;
 }
-.batman-image {
-    max-width: 200px;
-    display: block;
-    margin: 10px auto;
+
+.comic-item h3 {
+    color: #FFD700; /* Título do quadrinho */
+    font-size: 1.2em;
 }
+
+/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
-    background: #1F1F1F; /* Rodapé escuro */
+    background: #222; /* Fundo do rodapé */
+    color: #E0E0E0;
+    border-top: 5px solid #FFD700; /* Bordas douradas */
 }
 
+footer p {
+    margin: 5px 0;
+}
