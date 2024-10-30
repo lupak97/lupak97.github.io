@@ -7,24 +7,23 @@
 
 /* Corpo da página */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte de quadrinhos */
-    background-color: #101010; /* Fundo escuro */
+    font-family: 'Arial', sans-serif;
+    background-color: #1A1A1A; /* Fundo escuro */
     color: #E0E0E0; /* Texto claro */
     line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #222; /* Fundo do cabeçalho */
+    background-color: #333; /* Fundo do cabeçalho */
     text-align: center;
     padding: 20px;
-    border-bottom: 5px solid #FFD700; /* Bordas douradas */
 }
 
 header h1 {
     font-size: 3em;
     color: #FFD700; /* Dourado */
-    text-shadow: 3px 3px 5px #000; /* Sombra do texto */
+    text-shadow: 2px 2px 4px #000; /* Sombra do texto */
 }
 
 /* Imagem do Batman */
@@ -35,7 +34,7 @@ header img {
 
 /* Navegação */
 nav {
-    background: #333; /* Fundo da navegação */
+    background: #444; /* Fundo da navegação */
     padding: 10px;
 }
 
@@ -44,7 +43,6 @@ nav a {
     text-decoration: none;
     padding: 10px 15px;
     transition: background 0.3s;
-    border-radius: 5px;
 }
 
 nav a:hover {
@@ -57,48 +55,19 @@ section {
     margin: 20px;
     background: #222; /* Fundo das seções */
     border-radius: 8px; /* Bordas arredondadas */
-    border-left: 5px solid #FFD700; /* Borda lateral dourada */
 }
 
 section h2 {
     color: #FFD700; /* Títulos das seções */
     margin-bottom: 10px;
-    text-transform: uppercase; /* Letras maiúsculas */
-}
-
-/* Estilo para quadrinhos */
-.comic {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.comic-item {
-    background: #333; /* Fundo dos quadrinhos */
-    border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
-    width: 200px; /* Largura dos quadrinhos */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
-}
-
-.comic-item img {
-    width: 100%; /* Imagem do quadrinho */
-    border-radius: 5px;
-}
-
-.comic-item h3 {
-    color: #FFD700; /* Título do quadrinho */
-    font-size: 1.2em;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
-    background: #222; /* Fundo do rodapé */
+    background: #333; /* Fundo do rodapé */
     color: #E0E0E0;
-    border-top: 5px solid #FFD700; /* Bordas douradas */
 }
 
 footer p {
