@@ -77,15 +77,15 @@ nav a:hover {
     width: 100%; /* As imagens ocupam toda a largura do carrossel */
     height: 5cm; /* Define a altura do carrossel para 5cm */
     overflow: hidden; /* Garante que o conteúdo extra seja escondido */
-    border-radius: 10px; /* Bordas arredondadas no carrossel */
+    border-radius: 5px; /* Bordas arredondadas no carrossel */
 }
 
 .carrossel img {
     width: 100%; /* A largura da imagem vai ocupar 100% do carrossel */
-    height: 100%; /* A altura da imagem vai ocupar 100% da altura do carrossel */
+    height: 50%; /* A altura da imagem vai ocupar 100% da altura do carrossel */
     object-fit: none; /* Desabilita o ajuste da imagem para não cortar ou ajustar o zoom */
     object-position: center; /* Garante que a imagem fique centralizada */
-    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
 }
 
 
