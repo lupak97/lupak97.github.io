@@ -189,3 +189,59 @@ footer p {
         font-size: 1em;
     }
 }
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Carrossel */
+.carrossel {
+    position: relative;
+    max-width: 800px; /* Tamanho do carrossel */
+    margin: auto;
+    overflow: hidden; /* Esconde as imagens fora da área visível */
+}
+
+/* Estilo dos Slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+/* Estilo de cada slide */
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%; /* A imagem ocupa 100% do slide */
+    border-radius: 10px;
+}
+
+/* Estilo dos Botões de Navegação */
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
