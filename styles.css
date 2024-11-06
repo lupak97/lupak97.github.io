@@ -75,7 +75,7 @@ nav a:hover {
 /* Carrossel */
 .carrossel {
     width: 100%; /* As imagens ocupam toda a largura do carrossel */
-    height: 10cm; /* Define a altura do carrossel para 5cm */
+    height: 5cm; /* Define a altura do carrossel para 5cm */
     overflow: hidden; /* Garante que o conteúdo extra seja escondido */
     border-radius: 10px; /* Bordas arredondadas no carrossel */
 }
@@ -83,10 +83,10 @@ nav a:hover {
 .carrossel img {
     width: 100%; /* A largura da imagem vai ocupar 100% do carrossel */
     height: 100%; /* A altura da imagem vai ocupar 100% da altura do carrossel */
-    object-fit: none; /* Desabilita o ajuste da imagem para não cortar ou ajustar o zoom */
-    object-position: center; /* Garante que a imagem fique centralizada */
+    object-fit: fill; /* Preenche todo o espaço, mas distorce a imagem */
     border-radius: 10px; /* Bordas arredondadas nas imagens */
 }
+
 
 
 /* Seções */
