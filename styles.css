@@ -76,7 +76,7 @@ nav a:hover {
 /* Carrossel */
 .carrossel img {
     width: 100%;
-    height: auto;
+    height: 20px;
     border-radius: 10px;
 }
 
