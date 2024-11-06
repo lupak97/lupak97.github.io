@@ -75,16 +75,16 @@ nav a:hover {
 /* Carrossel */
 .carrossel {
     width: 100%; /* As imagens ocupam toda a largura do carrossel */
-    height: 5cm; /* Define a altura do carrossel para 5cm */
+    height: 20cm; /* Define a altura do carrossel para 5cm */
     overflow: hidden; /* Garante que o conteúdo extra seja escondido */
-    border-radius: 10px; /* Deixa o carrossel com bordas arredondadas */
+    border-radius: 20px; /* Deixa o carrossel com bordas arredondadas */
 }
 
 .carrossel img {
     width: 100%; /* As imagens ocupam toda a largura do carrossel */
     height: 100%; /* A altura da imagem será a altura do carrossel (5cm) */
     object-fit: cover; /* A imagem vai cobrir o espaço sem deformar */
-    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    border-radius: 20px; /* Bordas arredondadas nas imagens */
 }
 
 /* Seções */
