@@ -3,83 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Quadrinhos Fantásticos</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Site de Quadrinhos - Um espaço para explorar quadrinhos incríveis.">
+  <title>Quadrinhos Incríveis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navbar -->
   <header>
-    <nav>
-      <div class="logo">
-        <h1>Quadrinhos Fantásticos</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1 class="logo">Quadrinhos Incríveis</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Banner principal -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h2>Novos Quadrinhos Toda Semana</h2>
-      <p>Explore nossas últimas edições e fique por dentro dos lançamentos incríveis!</p>
-      <a href="#galeria" class="btn">Veja mais</a>
+      <h2>Bem-vindo ao Mundo dos Quadrinhos!</h2>
+      <p>Explore histórias incríveis, personagens épicos e muito mais.</p>
     </div>
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="about">
+  <section id="about" class="about">
     <div class="container">
-      <h2>Sobre o Site</h2>
-      <p>Quadrinhos Fantásticos é o lugar ideal para você encontrar quadrinhos de diversos estilos. Aqui você poderá acompanhar as últimas histórias, interagir com outros fãs e explorar o universo dos quadrinhos.</p>
+      <h2>Sobre Nós</h2>
+      <p>Somos uma comunidade apaixonada por quadrinhos, trazendo sempre as melhores histórias e ilustrações para você!</p>
     </div>
   </section>
 
-  <!-- Galeria de Quadrinhos -->
-  <section id="galeria" class="gallery">
-    <h2>Galeria de Quadrinhos</h2>
-    <div class="gallery-container">
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 1">
-        <p>Título do Quadrinho 1</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 2">
-        <p>Título do Quadrinho 2</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 3">
-        <p>Título do Quadrinho 3</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 4">
-        <p>Título do Quadrinho 4</p>
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Galeria de Quadrinhos</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x450/ffadad/ffffff?text=Quadrinho+1" alt="Quadrinho 1">
+          <h3>Quadrinho 1</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x450/ffd6a5/ffffff?text=Quadrinho+2" alt="Quadrinho 2">
+          <h3>Quadrinho 2</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x450/caffbf/ffffff?text=Quadrinho+3" alt="Quadrinho 3">
+          <h3>Quadrinho 3</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x450/a0c4ff/ffffff?text=Quadrinho+4" alt="Quadrinho 4">
+          <h3>Quadrinho 4</h3>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="contact">
-    <h2>Contato</h2>
-    <p>Tem alguma dúvida? Fale conosco!</p>
-    <form>
-      <input type="text" placeholder="Nome" required>
-      <input type="email" placeholder="E-mail" required>
-      <textarea placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para saber mais sobre nossos quadrinhos, eventos e muito mais!</p>
+      <form action="#">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem..." required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Quadrinhos Fantásticos - Todos os direitos reservados</p>
+    <div class="container">
+      <p>&copy; 2024 Quadrinhos Incríveis. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
 </body>
 </html>
