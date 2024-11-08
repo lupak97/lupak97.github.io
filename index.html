@@ -1,109 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LupakS HQ</title>
-
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="styles.css"> <!-- seu estilo personalizado -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quadrinhos Fantásticos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Design Inteligente</h1>
-    </header>
-
-    <!-- Navegação -->
+  <!-- Navbar -->
+  <header>
     <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
+      <div class="logo">
+        <h1>Quadrinhos Fantásticos</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
+  </header>
 
- 
-
-    <!-- Seção Carrossel -->
-    <section id="carrossel">
-        <h2>Carrossel de Imagens</h2>
-        <div class="carrossel">
-            <img src="Batmangrafite.jpg" alt="Imagem 1">
-            <img src="batman.jpg" alt="Imagem 2">
-            <img src="batmantt.jpg" alt="Imagem 3">
-        </div>
-    </section>
-
-    <!-- Conteúdo Principal -->
-    <div class="container">
-
-        <!-- Seção Sobre -->
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Bem-vindo ao universo sombrio de Gotham! ...</p>
-        </section>
-
-        <!-- Seção Serviços -->
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="batman.jpg" alt="Informações">
-                    <h3>Informações</h3>
-                    <p>Veja nesta seção informações que não vai querer perder sobre o Batman!.</p>
-                    <a href="#" class="btn">Saiba Mais</a>
-                </div>
-                <div class="card">
-                    <img src="batmanrobin.jpg" alt="Compra">
-                    <h3>Compra</h3>
-                    <p>Veja os quadrinhos disponíveis e seus respectivos preços!.</p>
-                    <a href="#" class="btn">Saiba Mais</a>
-                </div>
-                <div class="card">
-                    <img src="batmantt.jpg" alt="Venda">
-                    <h3>Venda</h3>
-                    <p>Quer vender suas HQs para comprar novas? Ou ganhar um dinheirinho? Achou o lugar certo!.</p>
-                    <a href="#" class="btn">Saiba Mais</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contato">
-            <h2>Fale Conosco</h2>
-            <p>Entre em contato para saber mais sobre como posso ajudar você.</p>
-        </section>
-
+  <!-- Banner principal -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Novos Quadrinhos Toda Semana</h2>
+      <p>Explore nossas últimas edições e fique por dentro dos lançamentos incríveis!</p>
+      <a href="#galeria" class="btn">Veja mais</a>
     </div>
+  </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Design Inteligente. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Sobre -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <h2>Sobre o Site</h2>
+      <p>Quadrinhos Fantásticos é o lugar ideal para você encontrar quadrinhos de diversos estilos. Aqui você poderá acompanhar as últimas histórias, interagir com outros fãs e explorar o universo dos quadrinhos.</p>
+    </div>
+  </section>
 
-    <!-- jQuery e Slick JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="script.js"></script> <!-- seu JS personalizado -->
+  <!-- Galeria de Quadrinhos -->
+  <section id="galeria" class="gallery">
+    <h2>Galeria de Quadrinhos</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 1">
+        <p>Título do Quadrinho 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 2">
+        <p>Título do Quadrinho 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 3">
+        <p>Título do Quadrinho 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x400" alt="Quadrinho 4">
+        <p>Título do Quadrinho 4</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        $(document).ready(function() {
-            $('.carrossel').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true
-            });
-        });
-    </script>
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>Tem alguma dúvida? Fale conosco!</p>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Quadrinhos Fantásticos - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>
