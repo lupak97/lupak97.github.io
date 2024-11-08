@@ -1,157 +1,146 @@
-/* Reset básico de estilo */
+/* RESET DE ESTILOS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* FONTES E GERAL */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
   color: #333;
+  background-color: #f7f7f7;
 }
 
-/* Barra de navegação */
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
 header {
   background-color: #333;
   color: #fff;
-  padding: 1rem;
+  padding: 20px 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .logo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  display: inline-block;
 }
 
-nav .logo h1 {
-  font-size: 1.8rem;
-}
-
-nav ul.nav-links {
+header nav ul {
   list-style: none;
-  display: flex;
+  float: right;
+  margin-right: 20px;
 }
 
-nav ul.nav-links li {
-  margin-left: 2rem;
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-nav ul.nav-links li a {
-  text-decoration: none;
+header nav ul li a {
   color: #fff;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 5px 10px;
 }
 
-nav ul.nav-links li a:hover {
-  color: #f39c12;
+header nav ul li a:hover {
+  background-color: #ff6347;
+  border-radius: 5px;
 }
 
-/* Banner */
+/* SEÇÃO HERO */
 .hero {
-  background: url('https://via.placeholder.com/1920x700') no-repeat center center/cover;
-  height: 60vh;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url('https://via.placeholder.com/1500x600/ff7b7b/ffffff?text=Quadrinhos+Incríveis') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
   text-align: center;
-  position: relative;
-}
-
-.hero .hero-content {
-  z-index: 1;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero .btn {
-  padding: 0.8rem 2rem;
-  background-color: #f39c12;
-  color: #fff;
   font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
 }
 
-.hero .btn:hover {
-  background-color: #e67e22;
-}
-
-/* Seção Sobre */
+/* SOBRE */
 .about {
-  padding: 3rem 1rem;
   background-color: #fff;
+  padding: 50px 0;
   text-align: center;
 }
 
 .about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.about p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Galeria de Quadrinhos */
+/* GALERIA */
 .gallery {
-  padding: 3rem 1rem;
-  text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
+  padding: 50px 0;
 }
 
 .gallery h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.gallery-container {
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 30px;
 }
 
 .gallery-item {
   background-color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.gallery-item p {
-  margin-top: 1rem;
-  font-size: 1.1rem;
+.gallery-item h3 {
+  font-size: 1.2rem;
+  color: #333;
 }
 
-/* Formulário de Contato */
+/* CONTATO */
 .contact {
-  padding: 3rem 1rem;
   background-color: #fff;
+  padding: 50px 0;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -162,37 +151,32 @@ nav ul.nav-links li a:hover {
   flex-direction: column;
 }
 
-.contact input,
-.contact textarea {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: 1rem;
+.contact input, .contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 .contact button {
-  padding: 1rem;
-  background-color: #f39c12;
-  color: #fff;
+  padding: 10px;
   font-size: 1.2rem;
+  background-color: #ff6347;
   border: none;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-  background-color: #e67e22;
+  background-color: #ff4500;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background-color: #333;
   color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
