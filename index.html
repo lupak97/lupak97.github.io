@@ -1,85 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LupakS HQs</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Quadrinhos</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <h1>Quadrinhos Incríveis</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Quadrinhos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Carrossel de Imagens -->
-    <section id="carrossel">
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="https://via.placeholder.com/1200x400?text=Quadrinho+1" alt="Quadrinho 1">
-                <img src="https://via.placeholder.com/1200x400?text=Quadrinho+2" alt="Quadrinho 2">
-                <img src="https://via.placeholder.com/1200x400?text=Quadrinho+3" alt="Quadrinho 3">
-                <img src="https://via.placeholder.com/1200x400?text=Quadrinho+4" alt="Quadrinho 4">
-            </div>
-        </div>
+  <!-- Seção principal -->
+  <main>
+    <section class="hero">
+      <h1>Bem-vindo à Loja de Quadrinhos!</h1>
+      <p>Encontre as HQs mais incríveis para a sua coleção.</p>
+      <a href="catalogo.html" class="btn">Ver Catálogo</a>
     </section>
 
-    <!-- Cards de Quadrinhos -->
-    <main>
-        <div class="container">
-            <h2>Explore Nossos Quadrinhos</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x450?text=Quadrinho+1" alt="Quadrinho 1">
-                    <div class="card-content">
-                        <h3>Quadrinho 1</h3>
-                        <p>Uma história épica de aventura e ação.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x450?text=Quadrinho+2" alt="Quadrinho 2">
-                    <div class="card-content">
-                        <h3>Quadrinho 2</h3>
-                        <p>Mistério, suspense e enigmas intrigantes.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x450?text=Quadrinho+3" alt="Quadrinho 3">
-                    <div class="card-content">
-                        <h3>Quadrinho 3</h3>
-                        <p>Aventura no espaço com personagens inusitados.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x450?text=Quadrinho+4" alt="Quadrinho 4">
-                    <div class="card-content">
-                        <h3>Quadrinho 4</h3>
-                        <p>Uma trama de fantasia e magia.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="destaques">
+      <h2>Quadrinhos em Destaque</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img src="assets/img/hq1.jpg" alt="HQ 1">
+          <h3>Batman: O Cavaleiro das Trevas</h3>
+          <p class="preco">R$ 49,90</p>
+          <a href="catalogo.html" class="btn">Comprar</a>
         </div>
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Quadrinhos Incríveis. Todos os direitos reservados.</p>
+        <div class="produto">
+          <img src="assets/img/hq2.jpg" alt="HQ 2">
+          <h3>Homem-Aranha: De Volta ao Lar</h3>
+          <p class="preco">R$ 39,90</p>
+          <a href="catalogo.html" class="btn">Comprar</a>
         </div>
-    </footer>
+        <div class="produto">
+          <img src="assets/img/hq3.jpg" alt="HQ 3">
+          <h3>Vingadores: A Guerra Infinita</h3>
+          <p class="preco">R$ 59,90</p>
+          <a href="catalogo.html" class="btn">Comprar</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Loja de Quadrinhos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
