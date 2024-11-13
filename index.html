@@ -3,73 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comic Book Store</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>HQs do Batman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #FFCC00; /* Cor amarela do Batman */
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFCC00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery h2 {
+            text-align: center;
+            margin-top: 0;
+            color: #FFCC00;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <nav>
-            <div class="logo">
-                <h1>Comic Book Store</h1>
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Quadrinhos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>HQs do Batman</h1>
     </header>
 
-    <!-- Seção Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Bem-vindo à Comic Book Store</h2>
-            <p>O lugar onde você encontra os melhores quadrinhos para adicionar à sua coleção!</p>
-            <a href="#produtos" class="btn">Explore Agora</a>
-        </div>
-    </section>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Coleções</a>
+        <a href="#">Contato</a>
+    </nav>
 
-    <!-- Seção de Produtos -->
-    <section id="produtos" class="produtos">
-        <h2>Nossos Quadrinhos</h2>
-        <div class="produto">
-            <img src="https://m.media-amazon.com/images/I/61uH5ts+ZpL._AC_SY679_.jpg" alt="Batman: O Retorno do Cavaleiro das Trevas">
-            <h3>Batman: O Retorno do Cavaleiro das Trevas</h3>
-            <p>Por Frank Miller</p>
-            <span class="preco">R$ 99,90</span>
-            <a href="#" class="btn">Comprar Agora</a>
-        </div>
-        <div class="produto">
-            <img src="https://m.media-amazon.com/images/I/91jw5nR+O8L._AC_SY679_.jpg" alt="Batman: Ano Um">
-            <h3>Batman: Ano Um</h3>
-            <p>Por Frank Miller</p>
-            <span class="preco">R$ 89,90</span>
-            <a href="#" class="btn">Comprar Agora</a>
-        </div>
-        <div class="produto">
-            <img src="https://m.media-amazon.com/images/I/51ibqZjCTmL._AC_SY679_.jpg" alt="Batman: A Piada Mortal">
-            <h3>Batman: A Piada Mortal</h3>
-            <p>Por Alan Moore</p>
-            <span class="preco">R$ 79,90</span>
-            <a href="#" class="btn">Comprar Agora</a>
-        </div>
-    </section>
+    <div class="content">
+        <section>
+            <h2>Galeria de HQs</h2>
+            <div class="gallery">
+                <div>
+                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+1" alt="HQ Batman 1">
+                    <h3>Batman: Ano Um</h3>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+2" alt="HQ Batman 2">
+                    <h3>Batman: O Cavaleiro das Trevas</h3>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+3" alt="HQ Batman 3">
+                    <h3>Batman: Morte em Família</h3>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+4" alt="HQ Batman 4">
+                    <h3>Batman: O Retorno do Cavaleiro das Trevas</h3>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="sobre">
-        <h2>Sobre a Comic Book Store</h2>
-        <p>Na Comic Book Store, oferecemos uma vasta coleção de quadrinhos de todos os gêneros, do clássico ao moderno. Seja você um fã de super-heróis ou um entusiasta de quadrinhos independentes, temos algo para você!</p>
-    </section>
-
-    <!-- Rodapé -->
-    <footer id="contato">
-        <p>&copy; 2024 Comic Book Store | Todos os direitos reservados.</p>
-        <div class="social">
-            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
-        </div>
+    <footer>
+        <p>&copy; 2024 HQs do Batman. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
