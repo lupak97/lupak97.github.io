@@ -1,158 +1,126 @@
-/* Resetando estilos padrões */
+/* Resetando estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo e fontes */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #181818; /* Fundo escuro */
+    background-color: #181818;
     color: #f1f1f1;
-    line-height: 1.6;
-    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
 }
 
 /* Cabeçalho */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #222;
-    padding: 30px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-header h1 {
-    font-size: 3.5rem;
     color: #FFCC00;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Navegação */
-nav {
-    background-color: #333;
     padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-nav a {
+header .logo h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: #FFCC00;
     text-decoration: none;
-    margin: 0 25px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
+nav ul li a:hover {
     color: #fff;
     transform: scale(1.1);
     text-decoration: underline;
 }
 
-/* Seção de conteúdo */
-.content {
-    padding: 50px 10%;
+/* Seção Hero (imagem de fundo e texto) */
+.hero {
+    background-image: url('https://via.placeholder.com/1920x1080?text=Batman+Hero+Image');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
 }
 
-/* Título da seção */
-h2 {
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.cards {
+    padding: 70px 15px 30px;
+    text-align: center;
+}
+
+.cards h2 {
     font-size: 2.5rem;
     color: #FFCC00;
     margin-bottom: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
 }
 
-/* Galeria de HQs */
-.gallery {
+.card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 0 10px;
+    gap: 20px;
 }
 
-.gallery div {
-    position: relative;
-    overflow: hidden;
+.card {
+    background-color: #333;
     border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery img {
+.card img {
     width: 100%;
-    height: auto;
+    height: 450px;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.gallery div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+.card-body {
+    padding: 15px;
 }
 
-.gallery div:hover img {
-    transform: scale(1.1);
-}
-
-/* Título das HQs na galeria */
-.gallery h3 {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
-    font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .content {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav a {
-        font-size: 1.1rem;
-        margin: 0 15px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-    }
-
-    .gallery h3 {
-        font-size: 1.2rem;
-    }
-}
+.card h3 {
+    font-size: 1.6rem;
+    color:
