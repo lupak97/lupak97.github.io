@@ -1,159 +1,233 @@
-/* Resetando alguns estilos padrões */
+/* Resetando estilos padrões */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Corpo e tipografia */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Container para centralizar conteúdo */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Estilo para o cabeçalho */
+/* Cabeçalho */
 header {
-    background: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #222;
+  padding: 15px 0;
 }
 
-header h1 {
-    font-size: 2.5rem;
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+header nav ul li {
+  margin: 0 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+header nav ul li a:hover {
+  color: #ff6347; /* Cor de hover */
 }
 
-nav ul li a:hover {
-    color: #f4f4f4;
+/* Seção Hero */
+.hero {
+  background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-/* Estilos para o carrossel */
-#carrossel {
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.carousel-container {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
-.carousel-slide {
-    display: flex;
-    transition: transform 1s ease;
+.hero .btn {
+  padding: 10px 25px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.carousel-slide img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.hero .btn:hover {
+  background-color: #ff4500;
 }
 
-@media (max-width: 768px) {
-    .carousel-slide img {
-        width: 100%;
-        height: auto;
-    }
+/* Seção de Destaques */
+.destaques {
+  text-align: center;
+  margin: 40px 0;
 }
 
-/* Estilos para os cards */
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 50px;
+.destaques h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-.card {
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.card img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+.produto {
+  background-color: #fff;
+  width: 280px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.produto img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.card:hover img {
-    transform: scale(1.1);
+.produto h3 {
+  font-size: 1.2rem;
+  margin: 15px 0;
 }
 
-.card-content {
-    padding: 15px;
-    text-align: center;
+.produto .preco {
+  font-size: 1.1rem;
+  color: #ff6347;
+  margin-bottom: 20px;
 }
 
-.card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.produto .btn {
+  padding: 10px 25px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.card-content p {
-    font-size: 1rem;
-    color: #555;
+.produto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para o rodapé */
+.produto:hover img {
+  transform: scale(1.05);
+}
+
+.produto:hover .btn {
+  background-color: #ff6347;
+}
+
+/* Botão no hover */
+.produto .btn:hover {
+  background-color: #ff4500;
+}
+
+/* Carrinho */
+.total {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.total h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.total .btn {
+  padding: 12px 30px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.total .btn:hover {
+  background-color: #ff4500;
+}
+
+/* Formulário de Contato */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 12px 30px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff4500;
+}
+
+/* Rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 footer p {
-    font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .card {
-        width: 90%;
-    }
+  .produto {
+    width: 90%;
+    margin: 10px 0;
+  }
 }
