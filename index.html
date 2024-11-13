@@ -4,110 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HQs do Batman</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #111;
-            color: white;
-        }
-
-        header {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            color: #FFCC00; /* Cor amarela do Batman */
-        }
-
-        nav {
-            background-color: #444;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: #FFCC00;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.2rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .gallery h2 {
-            text-align: center;
-            margin-top: 0;
-            color: #FFCC00;
-        }
-
-        footer {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-            color: white;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>HQs do Batman</h1>
+        <div class="logo">
+            <h1>HQs do Batman</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Coleções</a>
-        <a href="#">Contato</a>
-    </nav>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Bem-vindo ao Universo Sombrio do Batman</h2>
+            <p>Explore as HQs mais icônicas do Cavaleiro das Trevas</p>
+        </div>
+    </section>
 
-    <div class="content">
-        <section>
-            <h2>Galeria de HQs</h2>
-            <div class="gallery">
-                <div>
-                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+1" alt="HQ Batman 1">
+    <section class="gallery">
+        <h2>Galeria de HQs</h2>
+        <div class="gallery-items">
+            <div class="item">
+                <img src="https://via.placeholder.com/300x450?text=Batman+HQ+1" alt="Batman: Ano Um">
+                <div class="item-info">
                     <h3>Batman: Ano Um</h3>
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+2" alt="HQ Batman 2">
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x450?text=Batman+HQ+2" alt="Batman: O Cavaleiro das Trevas">
+                <div class="item-info">
                     <h3>Batman: O Cavaleiro das Trevas</h3>
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+3" alt="HQ Batman 3">
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x450?text=Batman+HQ+3" alt="Batman: Morte em Família">
+                <div class="item-info">
                     <h3>Batman: Morte em Família</h3>
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/300x450?text=Batman+HQ+4" alt="HQ Batman 4">
-                    <h3>Batman: O Retorno do Cavaleiro das Trevas</h3>
-                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 HQs do Batman. Todos os direitos reservados.</p>
