@@ -1,93 +1,164 @@
-/* Resetando margens e paddings */
+/* Resetando estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo da página */
+/* Corpo e fontes */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    color: #f1f1f1;
+    overflow-x: hidden;
 }
 
-/* Estilo da grid de coleções */
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: #FFCC00;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+header .logo h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFCC00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/* Seção de Coleções */
+#colecoes {
+    padding: 80px 15px 30px;
+    text-align: center;
+}
+
+#colecoes h1 {
+    font-size: 2.5rem;
+    color: #FFCC00;
+    margin-bottom: 20px;
+}
+
+#colecoes p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+/* Grid de Coleções */
 .colecoes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsividade com tamanhos flexíveis */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    justify-items: center;
+}
+
+.colecao-item {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.colecao-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.colecao-item h3 {
+    font-size: 1.6rem;
+    color: #FFCC00;
+    margin: 10px;
+}
+
+.colecao-item p {
+    font-size: 1rem;
+    color: #f1f1f1;
+    margin: 10px;
+}
+
+/* Botões de Voltar e Contato */
+.voltar-container, .contato-container {
+    text-align: center;
     margin-top: 30px;
 }
 
-/* Estilo dos itens de coleção */
-.colecao-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Ajuste nas imagens */
-.colecao-item img {
-    width: 100%;               /* Ajusta a imagem à largura do item */
-    height: auto;              /* Preserva a proporção */
-    object-fit: contain;       /* Faz a imagem caber sem cortar ou distorcer */
-    max-height: 300px;         /* Limita a altura máxima */
-    border-bottom: 1px solid #ddd;
-}
-
-/* Títulos das HQs */
-.colecao-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-top: 10px;
-}
-
-/* Descrição */
-.colecao-item p {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 10px;
-}
-
-BOTÃO DE VOLTAR
-
-/* Estilo do container do botão de voltar */
-.voltar-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* Estilo do botão de Voltar */
-.btn-voltar {
+.btn-voltar, .btn-contato {
     display: inline-block;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #FFCC00;
+    color: #181818;
     border: none;
     border-radius: 8px;
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
-/* Efeito de hover (quando o mouse passa sobre o botão) */
-.btn-voltar:hover {
-    background-color: #0056b3;
+.btn-voltar:hover, .btn-contato:hover {
+    background-color: #FF9800;
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6);
+    text-decoration: underline;
 }
 
-/* Efeito de foco (quando o botão é focado com o teclado) */
-.btn-voltar:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #colecoes h1 {
+        font-size: 2rem;
+    }
+
+    .colecao-item {
+        padding: 15px;
+    }
+}
