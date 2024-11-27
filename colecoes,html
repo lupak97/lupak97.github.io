@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>  
-                <a href="colecoes.html">Coleções</a></li> 
+                <li><a href="index.html" id="voltarLink" role="link" aria-label="Voltar à página inicial">Voltar ao Início</a></li> 
             </ul>
         </nav>
     </header>
