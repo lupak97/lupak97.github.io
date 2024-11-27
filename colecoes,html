@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>  
-                <li><a href="#" id="colecoesLink">Coleções</a></li> 
+                <a href="colecoes.html">Coleções</a></li> 
             </ul>
         </nav>
     </header>
