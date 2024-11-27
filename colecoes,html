@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Veja HQs Raros do Batman</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <ul>  
+                <li><a href="#" id="colecoesLink">Coleções</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Coleções -->
+    <section id="colecoes" class="hidden">
+        <h2>HQs Raros do Batman</h2>
+        <div class="colecoes-lista">
+            <div class="colecao-item">
+                <h3>Batman #1 (1940)</h3>
+                <img src="batman_hq1.jpg" alt="Batman HQ 1" />
+            </div>
+            <div class="colecao-item">
+                <h3>Detective Comics #27 (1939)</h3>
+                <img src="batman_hq2.jpg" alt="Detective Comics" />
+            </div>
+            <div class="colecao-item">
+                <h3>Batman: The Killing Joke (1988)</h3>
+                <img src="batman_hq3.jpg" alt="The Killing Joke" />
+            </div>
+            <!-- Adicione mais HQs aqui -->
+        </div>
+    </section>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
