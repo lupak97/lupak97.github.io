@@ -1,0 +1,55 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilo da grid de coleções */
+.colecoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsividade com tamanhos flexíveis */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+/* Estilo dos itens de coleção */
+.colecao-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Ajuste nas imagens */
+.colecao-item img {
+    width: 100%;               /* Ajusta a imagem à largura do item */
+    height: auto;              /* Preserva a proporção */
+    object-fit: contain;       /* Faz a imagem caber sem cortar ou distorcer */
+    max-height: 300px;         /* Limita a altura máxima */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Títulos das HQs */
+.colecao-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Descrição */
+.colecao-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
