@@ -53,3 +53,41 @@ body {
     color: #777;
     margin-top: 10px;
 }
+
+BOTÃO DE VOLTAR
+
+/* Estilo do container do botão de voltar */
+.voltar-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilo do botão de Voltar */
+.btn-voltar {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de hover (quando o mouse passa sobre o botão) */
+.btn-voltar:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6);
+}
+
+/* Efeito de foco (quando o botão é focado com o teclado) */
+.btn-voltar:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
