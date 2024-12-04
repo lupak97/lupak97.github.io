@@ -84,6 +84,17 @@
     <footer>
         <p>&copy; 2024 Batman Quadrinhos - Todos os direitos reservados</p>
     </footer>
+<script>
+        // Seleciona o link de "Avaliações" e aplica a rolagem suave
+        document.querySelector('.link-avaliacoes').addEventListener('click', function(e) {
+            e.preventDefault(); // Previne o comportamento padrão de navegação
+            const target = document.querySelector('#avaliacoes'); // Seleciona a seção de avaliações
+            target.scrollIntoView({
+                behavior: 'smooth', // Ativa a rolagem suave
+                block: 'start' // Alinha a seção ao topo da tela
+            });
+        });
+    </script>
 </body>
 </html>
 
